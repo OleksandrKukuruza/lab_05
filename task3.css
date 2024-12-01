@@ -1,0 +1,58 @@
+body {
+    margin: 0;
+    font-family: Arial, sans-serif;
+    background-color: #f4f4f4;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+}
+
+.projects {
+    display: flex;
+    gap: 20px;
+}
+
+.project {
+    position: relative;
+    width: 300px;
+    overflow: hidden;
+    border: 2px solid transparent;
+    transition: 0.5s;
+}
+
+.project img {
+    width: 100%;
+    display: block;
+}
+
+.description {
+    position: absolute;
+    bottom: 0;
+    width: 100%;
+    background: rgba(0, 0, 0, 0.7);
+    color: #fff;
+    transform: translateY(100%);
+    transition: transform 0.5s;
+    text-align: center;
+    padding: 10px;
+}
+
+.project:hover .description {
+    transform: translateY(0);
+}
+
+.project:hover {
+    border-color: orange;
+}
+
+.description h2 {
+    margin: 0;
+    padding: 5px 0;
+    background: orange;
+    color: #000;
+}
+
+.description p {
+    margin: 5px 0;
+}
